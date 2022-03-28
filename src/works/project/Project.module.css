@@ -1,0 +1,36 @@
+.projectBlock {
+    border: 1px solid midnightblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: darkgray;
+    position: relative;
+}
+
+.title {
+    margin: 15px 0;
+    background-color: darkgray;
+}
+
+.description {
+    text-align: center;
+    border: 1px solid midnightblue;
+    width: 100%;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: darkcyan;
+}

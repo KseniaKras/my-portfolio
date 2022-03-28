@@ -1,0 +1,27 @@
+.skillBlock {
+    border: 1px solid midnightblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+}
+
+.title {
+    margin: 15px 0;
+    background-color: darkgray;
+}
+
+.description {
+    text-align: center;
+    border: 1px solid #18192a;
+    padding: 10px;
+    width: 100%;
+}

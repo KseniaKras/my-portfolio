@@ -1,0 +1,30 @@
+.footerBlock {
+    border: 1px solid midnightblue;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    border: 1px solid #18192a;
+}
+.someBlocks {
+    width: 60%;
+    margin: 20px 0;
+    height: 70px;
+    border: 1px solid midnightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blockItem {
+    width: 50px;
+    height: 60px;
+    background-color: darkgray;
+}
+.law {
+    font-style: italic;
+    border: 1px solid #18192a;
+}

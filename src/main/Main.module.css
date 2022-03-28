@@ -1,0 +1,50 @@
+.mainBlock {
+    height: 100vh;
+    /*width: 80%;*/
+    /*margin: 50px auto;*/
+    background-color: rgba(30, 144, 255, 0.43);
+    border: 1px solid midnightblue;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 340px) and (max-width: 740px) {
+    .greetingText {
+        margin-bottom: 20px;
+    }
+
+}
+
+.greetingText {
+    border: 1px solid #18192a;
+}
+
+.greetingText h5 {
+    color: midnightblue;
+    font-size: 24px;
+}
+
+.greetingText h3 {
+    font-size: 30px;
+    line-height: 2;
+    color: #18192a;
+}
+
+.greetingText span {
+    font-size: 20px;
+}
+
+.mainPhoto {
+    width: 300px;
+    height: 400px;
+    background-color: darkgray;
+}

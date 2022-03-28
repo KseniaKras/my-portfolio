@@ -1,0 +1,11 @@
+.navBlock {
+    margin: 0 10px;
+    width: 360px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}

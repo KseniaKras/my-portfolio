@@ -1,0 +1,21 @@
+.worksBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 201, 201, 0.29);
+    border: 1px solid midnightblue;
+    min-height: 100vh;
+}
+
+.worksHeader {
+    background-color: rgba(137,76,75,0.75);
+    text-align: center;
+    padding: 30px;
+}
+
+.worksContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
