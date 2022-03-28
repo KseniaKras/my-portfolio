@@ -20,6 +20,7 @@
 .title {
     margin: 15px 0;
     background-color: darkgray;
+    font-size: 22px;
 }
 
 .description {
@@ -27,6 +28,7 @@
     border: 1px solid midnightblue;
     width: 100%;
     padding: 10px;
+    font-size: 18px;
 }
 
 .link {

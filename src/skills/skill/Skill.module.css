@@ -17,6 +17,7 @@
 .title {
     margin: 15px 0;
     background-color: darkgray;
+    font-size: 22px;
 }
 
 .description {
@@ -24,4 +25,5 @@
     border: 1px solid #18192a;
     padding: 10px;
     width: 100%;
+    font-size: 18px;
 }

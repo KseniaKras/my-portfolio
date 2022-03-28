@@ -9,6 +9,7 @@
 }
 .name {
     border: 1px solid #18192a;
+    font-size: 18px;
 }
 .someBlocks {
     width: 60%;
@@ -27,4 +28,12 @@
 .law {
     font-style: italic;
     border: 1px solid #18192a;
+    font-size: 14px;
+}
+
+@media (max-width: 550px) {
+    .blockItem {
+        width: 30px;
+        height: 40px;
+    }
 }
