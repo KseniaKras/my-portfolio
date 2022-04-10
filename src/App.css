@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,400;1,500;1,600&display=swap');
+
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -5,9 +9,11 @@
   border: 0;
   line-height: 1;
   font-size: 18px;
+  font-family: "Poppins",sans-serif;
 }
+
 .App {
-  background-color: #a1b1c4;
+  background-color: #fff;
 }
 /*.container {*/
 /*  margin: 0 auto;*/
