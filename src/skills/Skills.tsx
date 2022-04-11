@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Skills.module.css'
 import {Skill} from "./skill/Skill";
 import c from "../common/styles/Container.module.css";
+import {Nav} from "../header/navigation/Nav";
 
 export const Skills = () => {
     return (
@@ -17,6 +18,7 @@ export const Skills = () => {
                         <Skill title={'React'} description={'Описание навыка'}/>
                     </div>
             </div>
+            <Nav />
         </div>
     );
 };
