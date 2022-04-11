@@ -2,6 +2,7 @@ import React from 'react';
 import s from "../works/Works.module.css";
 import {Project} from "./project/Project";
 import c from "../common/styles/Container.module.css";
+import {Nav} from "../header/navigation/Nav";
 
 export const Works = () => {
     return (
@@ -15,6 +16,7 @@ export const Works = () => {
                     <Project title={'Название проекта'} description={'Описание проекта'}/>
                 </div>
             </div>
+            <Nav/>
         </div>
     );
 };

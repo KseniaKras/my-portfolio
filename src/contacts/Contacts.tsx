@@ -3,6 +3,7 @@ import s from './Contacts.module.css';
 import {Input} from "../common/input/Input";
 import {Textarea} from "../common/textarea/Textarea";
 import c from "../common/styles/Container.module.css";
+import {Nav} from "../header/navigation/Nav";
 
 export const Contacts = () => {
     return (
@@ -18,6 +19,7 @@ export const Contacts = () => {
                     <a href={'#'} className={s.link}>Отправить</a>
                 </div>
             </div>
+            <Nav/>
         </div>
     );
 };

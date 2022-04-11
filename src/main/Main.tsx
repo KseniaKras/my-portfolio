@@ -4,6 +4,7 @@ import c from './../common/styles/Container.module.css'
 import {Nav} from "../header/navigation/Nav";
 import photo from '../common/images/myphoto.jpg'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import {NavLink} from "react-router-dom";
 
 
 
@@ -27,13 +28,13 @@ export const Main = () => {
                             Hello, I'm front-end developer. I have experience in
                             creating SPA with react/redux/typescript/axios.
                         </p>
-                        <button className={s.mainButton}>
+                        <NavLink to={'/about'} className={s.mainButton}>
                             <span className={s.mainBtnText}>About me</span>
                             <div className={s.iconArrow}>
                                 <ArrowForwardIcon/>
                             </div>
                             <div className={s.forAnimation}/>
-                        </button>
+                        </NavLink>
                     </div>
                 </div>
             </div>
