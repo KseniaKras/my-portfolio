@@ -18,7 +18,6 @@ export const Skills = () => {
                         <Skill title={'React'} description={'Описание навыка'}/>
                     </div>
             </div>
-            <Nav />
         </div>
     );
 };

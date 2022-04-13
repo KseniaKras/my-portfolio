@@ -16,7 +16,6 @@ export const Works = () => {
                     <Project title={'Название проекта'} description={'Описание проекта'}/>
                 </div>
             </div>
-            <Nav/>
         </div>
     );
 };

@@ -25,21 +25,28 @@ type NavTextPropsType = {
 export const NavItem: FC<NavTextPropsType> = ({text, path}) => {
 
     const showIcon = () => {
-        if (text === 'Home') return <HomeRoundedIcon/>
-        if (text === 'About me') return <PersonRoundedIcon/>
-        if (text === 'Portfolio') return <WebIcon/>
-        if (text === 'Contact') return <ChatRoundedIcon/>
+        if (text === 'Home') return <HomeRoundedIcon fontSize="large" />
+        if (text === 'About me') return <PersonRoundedIcon fontSize="large" />
+        if (text === 'Portfolio') return <WebIcon fontSize="large" />
+        if (text === 'Contact') return <ChatRoundedIcon fontSize="large" />
     }
 
-    return <div className={s.navLinkBlock}>
-        <NavLink
-            to={path}
-            className={({isActive}) => isActive ? `${s.navLink} ${s.activeLink}` : `${s.navLink}`}
-        >
-            <div className={s.navText}>{text}</div>
-            <div className={s.navIcon}>{showIcon()}</div>
-        </NavLink>
-    </div>
+    return (
+        <div className={s.navLinkBlock}>
+            <NavLink
+                to={path}
+                className={({isActive}) => isActive ? `${s.navLink} ${s.activeLink}` : `${s.navLink}`}
+            >
+                <div className={s.navIcon}>
+                    <span className={s.icon}>{showIcon()}</span>
+                </div>
+                <div className={s.navText}>
+                    {text}
+                </div>
+
+            </NavLink>
+        </div>
+    )
 }
 
 

@@ -19,7 +19,6 @@ export const Contacts = () => {
                     <a href={'#'} className={s.link}>Отправить</a>
                 </div>
             </div>
-            <Nav/>
         </div>
     );
 };
