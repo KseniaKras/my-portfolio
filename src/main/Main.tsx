@@ -1,13 +1,14 @@
 import React from 'react';
 import s from './Main.module.css'
 import c from './../common/styles/Container.module.css'
-import {Nav} from "../header/navigation/Nav";
 import photo from '../common/images/photo.jpg'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import {NavLink} from "react-router-dom";
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import PhotoBlock from "./photoBlock/PhotoBlock";
+import {BlockTitle} from "../common/blockTitle/BlockTitle";
 
 
 export const Main = () => {
@@ -16,14 +17,12 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={c.container}>
                 <div className={s.mainContent}>
-                    <div className={s.photoBlock}>
-                        <img src={photo} alt={'photo'} className={s.photo}/>
-                    </div>
+                    <PhotoBlock />
                     <div className={s.greetingBlock}>
-                        {/*<div>*/}
-                        <p className={s.greeting}>Hello, I am</p>
-                        <h1 className={s.name}>Ksenia Krasnikova</h1>
-                        <div className={s.animatedBar}/>
+                        <BlockTitle introText={'Hello, I am'} title={'Ksenia Krasnikova'} />
+                        {/*<p className={s.greeting}>Hello, I am</p>*/}
+                        {/*<h1 className={s.name}>Ksenia Krasnikova</h1>*/}
+                        {/*<div className={s.animatedBar}/>*/}
                         <div className={s.animatedText}>
                             <h3>front-end developer</h3>
                             <h3>web-developer</h3>
