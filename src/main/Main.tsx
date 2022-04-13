@@ -1,7 +1,6 @@
 import React from 'react';
-import s from './Main.module.css'
-import c from './../common/styles/Container.module.css'
-import photo from '../common/images/photo.jpg'
+import s from './Main.module.scss'
+import c from '../common/styles/Container.module.scss'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import {NavLink} from "react-router-dom";
 import TelegramIcon from '@material-ui/icons/Telegram';
@@ -20,9 +19,6 @@ export const Main = () => {
                     <PhotoBlock />
                     <div className={s.greetingBlock}>
                         <BlockTitle introText={'Hello, I am'} title={'Ksenia Krasnikova'} />
-                        {/*<p className={s.greeting}>Hello, I am</p>*/}
-                        {/*<h1 className={s.name}>Ksenia Krasnikova</h1>*/}
-                        {/*<div className={s.animatedBar}/>*/}
                         <div className={s.animatedText}>
                             <h3>front-end developer</h3>
                             <h3>web-developer</h3>

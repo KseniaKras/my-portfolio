@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Contacts.module.css';
 import {Input} from "../common/input/Input";
 import {Textarea} from "../common/textarea/Textarea";
-import c from "../common/styles/Container.module.css";
+import c from "../common/styles/Container.module.scss";
 import {Nav} from "../header/navigation/Nav";
 
 export const Contacts = () => {

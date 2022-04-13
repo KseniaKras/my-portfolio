@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Remote.module.css'
-import c from "../common/styles/Container.module.css";
+import c from "../common/styles/Container.module.scss";
 
 export const RemoteWork = () => {
     return (

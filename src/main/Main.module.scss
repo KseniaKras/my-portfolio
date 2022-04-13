@@ -1,0 +1,132 @@
+.mainBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    .mainContent {
+        display: flex;
+        padding: 25px;
+        height: 100%;
+        .greetingBlock {
+            width: 58%;
+            flex: 0 0 auto;
+            padding: 25px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .animatedText {
+                position: relative;
+                height: 40px;
+                overflow: hidden;
+                text-align: center;
+                color: #75c71a;
+
+                >h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    line-height: 50px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    animation: fadeInDown 8s infinite alternate 1s;
+                }
+
+            }
+
+            .contacts {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                height: 50px;
+                width: 180px;
+
+                .iconLink {
+                    color: #6d6d6d;
+
+                    &:hover {
+                        color: #75c71a;
+                    }
+                }
+
+            }
+
+            .greetingText {
+                width: 400px;
+                color: #888;
+                text-transform: none;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.6;
+                margin: 0 0 15px;
+            }
+
+            >div .mainButton {
+                margin-top: 20px;
+                margin-right: 20px;
+                width: 180px;
+                height: 40px;
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 600;
+                border: 1px solid #72b626;
+                background-color: transparent;
+                color: #fff;
+                border-radius: 20px;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 10px 0;
+                text-decoration: none;
+                transition: background-color 2.5s ease-in-out, transform 2s ease-in-out;
+                position: relative;
+
+                &:hover {
+                    background-color: #75c71a;
+                    .iconArrow {
+                        background-color: #75c71a;
+                        transform: translateX(-140px);
+                    }
+                }
+
+                .iconArrow {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #75c71a;
+                    border-radius: 45%;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: -1px;
+                    right: 0;
+                    transition: transform 1.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+
+//animations
+@keyframes fadeInDown {
+    from {
+        /*opacity: 1;*/
+        -webkit-transform: translate3d(0,-200%,0);
+        transform: translate3d(0,-200%,0);
+    }
+    to {
+        /*opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+
+//media requests
+@media (min-width: 340px) and (max-width: 740px) {
+    .greetingBlock {
+        margin-bottom: 20px;
+    }
+}
+
+

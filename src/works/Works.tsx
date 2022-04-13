@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "../works/Works.module.css";
 import {Project} from "./project/Project";
-import c from "../common/styles/Container.module.css";
+import c from "../common/styles/Container.module.scss";
 import {Nav} from "../header/navigation/Nav";
 
 export const Works = () => {

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import s from "../Main.module.css";
+import s from "./PhotoBlock.module.scss";
 import photo from "../../common/images/photo.jpg";
 import Particles from "react-tsparticles";
 import {tsParticles} from "tsparticles-engine";

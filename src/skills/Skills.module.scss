@@ -1,0 +1,20 @@
+.skillsBlock {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div .skillsContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .skillsItems {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    }
+}
+
+
