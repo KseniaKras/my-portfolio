@@ -1,0 +1,22 @@
+.worksBlock {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div .worksContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        .projectsBlock {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+    }
+}
+

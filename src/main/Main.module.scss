@@ -5,6 +5,8 @@
     border-radius: 15px;
     .mainContent {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 25px;
         height: 100%;
         .greetingBlock {

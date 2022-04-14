@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import s from "./BlockTitle.module.css";
 
 type BlockTitlePropsType = {
-    introText: string
+    introText?: string
     title: string
 }
 

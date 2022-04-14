@@ -8,6 +8,7 @@
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    animation: animate 1.5s ease-in-out;
 }
 ::-webkit-scrollbar {
     width: 4px; /* ширина для вертикального скролла */
@@ -29,4 +30,21 @@
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        //width: 0;
+        //height: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        //width: 100%;
+        //height: 100%;
+        //transform: scale(1)
+        transform: translateX(0);
+    }
+
 }

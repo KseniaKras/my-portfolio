@@ -14,7 +14,6 @@ function App() {
             <div className="appBlockElement"/>
             <div className="appContent">
                 <Routes>
-                    {/*<Route path={"/*"} element={<Main/>}/>*/}
                     <Route path={"/home"} element={<Main/>}/>
                     <Route path={"/about"} element={<Skills/>}/>
                     <Route path={"/portfolio"} element={<Works/>}/>
