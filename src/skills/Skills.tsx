@@ -20,19 +20,7 @@ export const Skills: FC = () => {
 
                     <PersonalInfo data={PersonalDATA}/>
 
-                    <div className={s.skillsItems}>
-                        <Skill title={'React'}
-                               description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                        <Skill title={'React'} description={'Описание навыка'}/>
-                    </div>
+                    <SkillsBlock/>
                     <RemoteWork/>
                 </div>
             </div>
@@ -85,9 +73,24 @@ export const PersonalInfo: FC<PersonalInfoPropsType> = ({data}) => {
 export const SkillsBlock: FC = () => {
 
     return (
-        <div>
-
-        </div>
+        <>
+            <BlockTitle title={'My Skills'}/>
+            <div className={s.skillsItems}>
+                <Skill title={'React'}
+                       description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+                <Skill title={'React'} description={'Описание навыка'}/>
+            </div>
+        </>
     )
 }
 

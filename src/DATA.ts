@@ -7,6 +7,6 @@ export const PersonalDATA:PersonalDataType = [
     ["lastName:", "Krasnikova"],
     ["from:", "Minsk, Belarus"],
     ["email:", "ksenia.kras29@gmail.com"],
-    ["phone:", "(29)1626439"],
+    ["phone:", "+375(29)1626439"],
     ["languages:", "English, Russian"],
 ]

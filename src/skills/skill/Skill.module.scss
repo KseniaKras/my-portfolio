@@ -1,19 +1,40 @@
+@import "src/common/styles/variables";
+
 .skillBlock {
-    border: 1px solid midnightblue;
-    padding: 5px;
+    //border: 1px solid midnightblue;
+    //padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 250px;
-    .image {
-        width: 50px;
-        height: 50px;
-        background-color: darkgray;
+    width: 200px;
+    //margin-top: 15px;
+    padding: 20px 15px;
+    background-color: #232323;
+    margin: 20px 30px 30px;
+    box-shadow: 0 0 10px RGB(0 0 0 / 85%);
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+    &:hover {
+        background-color: RGB(0 0 0 / 85%);
+        background: linear-gradient(to bottom right, RGB(0 0 0 / 85%), RGB(0 0 0 / 15%));
+    }
+    .imageBlock {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        >img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: icon-rotate 10s ease-in-out infinite;
+            transition: all .5s ease-in-out;
+        }
+
     }
     .title {
         margin: 15px 0;
-        background-color: darkgray;
+        color: $green;
         font-size: 22px;
     }
     .description {
@@ -22,6 +43,17 @@
         padding: 10px;
         width: 100%;
         font-size: 18px;
+        color: $white;
+    }
+
+}
+
+@keyframes icon-rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
     }
 
 }
