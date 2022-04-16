@@ -1,0 +1,28 @@
+.remoteBlock {
+    //background-color: rgba(182, 110, 217, 0.75);
+    //border: 1px solid midnightblue;
+    background: rgba(26, 27, 26, 0.74);
+
+
+    > div .remoteContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            text-align: center;
+            background-color: darkgray;
+            margin: 30px 0;
+            padding: 10px;
+        }
+        .link {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: darkcyan;
+        }
+
+    }
+}
+

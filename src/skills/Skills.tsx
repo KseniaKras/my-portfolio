@@ -5,11 +5,14 @@ import c from "../common/styles/Container.module.scss";
 import {BlockTitle} from "../common/blockTitle/BlockTitle";
 import {RemoteWork} from "../remote/Remote";
 import photo from '../common/images/photo.jpg'
-import {PersonalDATA, PersonalDataType} from "../DATA";
+import {PersonalDATA, PersonalDataType, skills, SkillsType} from "../DATA";
 import {Button} from "../common/button/Button";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import redux from "../common/images/skills/redux.png";
+import react from "../common/images/skills/atom.png";
+
 
 export const Skills: FC = () => {
     return (
@@ -20,7 +23,7 @@ export const Skills: FC = () => {
 
                     <PersonalInfo data={PersonalDATA}/>
 
-                    <SkillsBlock/>
+                    <SkillsBlock skillsData={skills}/>
                     <RemoteWork/>
                 </div>
             </div>
@@ -70,37 +73,24 @@ export const PersonalInfo: FC<PersonalInfoPropsType> = ({data}) => {
 }
 
 
-export const SkillsBlock: FC = () => {
+type SkillsBlockPropsType = {
+    skillsData: SkillsType
+}
+export const SkillsBlock: FC<SkillsBlockPropsType> = ({skillsData}) => {
+
+    const skillElements = skillsData.map(skill => {
+        return <Skill key={skill.id}
+                      title={skill.title}
+                      image={skill.image}
+        />
+    })
 
     return (
         <>
             <BlockTitle title={'My Skills'}/>
             <div className={s.skillsItems}>
-                <Skill title={'React'}
-                       description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
-                <Skill title={'React'} description={'Описание навыка'}/>
+                {skillElements}
             </div>
         </>
     )
 }
-
-//
-// export const PersonalInfoItem: FC = () => {
-//
-//     return (
-//         <span>
-//
-//         </span>
-//     )
-// }
-
