@@ -33,7 +33,7 @@ export const Main = () => {
                         <p className={s.greetingText}>
                             I'm front-end developer. I have experience in cross-browser, adaptive,
                             responsive development, creating SPA with react, redux, typescript, using RestAPI.
-                            I will be glad to join your team and work together on interesting projects
+                            I will be glad to join your team and work together
                         </p>
                         <div>
                             <NavLink to={'/about'} className={s.mainButton}>

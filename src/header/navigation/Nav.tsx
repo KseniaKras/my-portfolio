@@ -9,7 +9,7 @@ import {NavLink} from 'react-router-dom';
 export const Nav = () => {
     return (
         <div className={s.navBlock}>
-            <NavItem text={'Home'} path={'/home'}/>
+            <NavItem text={'Home'} path={'/'}/>
             <NavItem text={'About me'} path={'/about'}/>
             <NavItem text={'Portfolio'} path={'/portfolio'}/>
             <NavItem text={'Contact'} path={'/contact'}/>
