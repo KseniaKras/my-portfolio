@@ -1,27 +1,49 @@
+@import 'src/common/styles/variables';
+@import "src/common/styles/Templates.module";
+
 .remoteBlock {
-    //background-color: rgba(182, 110, 217, 0.75);
-    //border: 1px solid midnightblue;
-    background: rgba(26, 27, 26, 0.74);
+    width: 70%;
+    padding: 20px 30px;
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 10px;
+    @extend %tplBackgroundCard;
 
-
-    > div .remoteContent {
+    .remoteContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: $white;
         .title {
             text-align: center;
-            background-color: darkgray;
-            margin: 30px 0;
+
+            //background-color: darkgray;
+            margin: 0 0 30px 0;
             padding: 10px;
         }
-        .link {
-            display: inline-block;
-            color: black;
+       /* .link {
+            //display: inline-block;
+            //color: $white;
             text-decoration: none;
+            //padding: 10px 15px;
+            //background-color: darkcyan;
+
+            background-color: transparent;
+            border: 2px solid $green;
             padding: 10px 15px;
-            background-color: darkcyan;
-        }
+            border-radius: 10px;
+            color: $white;
+            transition: all 1s ease-in-out;
+            letter-spacing: 1px;
+            &:hover {
+                background-color: $green;
+                transform: translateY(-7px);
+
+            }
+        }*/
 
     }
 }

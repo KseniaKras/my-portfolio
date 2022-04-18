@@ -6,6 +6,7 @@ import WebIcon from '@material-ui/icons/Web';
 import ChatRoundedIcon from '@material-ui/icons/ChatRounded';
 import {NavLink} from 'react-router-dom';
 
+
 export const Nav = () => {
     return (
         <div className={s.navBlock}>

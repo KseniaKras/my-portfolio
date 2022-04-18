@@ -20,9 +20,7 @@ function App() {
                     <Route path={"/contact"} element={<Contacts/>}/>
                 </Routes>
             </div>
-
             <Nav />
-            {/*/!*<RemoteWork />*!/*/}
             {/*/!*<Footer />*!/*/}
         </div>
     );

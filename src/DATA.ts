@@ -24,7 +24,7 @@ export const PersonalDATA:PersonalDataType = [
     ["lastName:", "Krasnikova"],
     ["from:", "Minsk, Belarus"],
     ["email:", "ksenia.kras29@gmail.com"],
-    ["phone:", "+375(29)1626439"],
+    // ["phone:", "+375(29)1626439"],
     ["languages:", "English, Russian"],
 ]
 
@@ -54,3 +54,16 @@ export const skills:SkillsType = [
     // {id: 15, image: storybook, title: 'StoryBook'},
 ]
 
+export type ProjectsType = {
+    id: number
+    title: string
+    description: string
+    img: string
+}
+
+export const ProjectsData = [
+    {id: 1, title: 'TodoList App', description: 'Stack..', img: ''},
+    {id: 2, title: 'Social Network App', description: 'Stack..', img: ''},
+    {id: 3, title: 'Friday\'s Project App', description: 'Stack..', img: ''},
+    {id: 4, title: 'QR-code Scanner', description: 'Stack..', img: ''},
+]

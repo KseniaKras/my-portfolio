@@ -10,8 +10,6 @@ import {Button} from "../common/button/Button";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import redux from "../common/images/skills/redux.png";
-import react from "../common/images/skills/atom.png";
 
 
 export const Skills: FC = () => {
@@ -20,9 +18,7 @@ export const Skills: FC = () => {
             <div className={c.container}>
                 <div className={s.skillsContent}>
                     <BlockTitle introText={'Intro'} title={'About me'}/>
-
                     <PersonalInfo data={PersonalDATA}/>
-
                     <SkillsBlock skillsData={skills}/>
                     <RemoteWork/>
                 </div>
@@ -63,7 +59,6 @@ export const PersonalInfo: FC<PersonalInfoPropsType> = ({data}) => {
                     <a href={'#'} target={'_blank'} className={s.iconLink}><GitHubIcon fontSize={"large"}/></a>
                     <a href={'#'} target={'_blank'} className={s.iconLink}><LinkedInIcon fontSize={"large"}/></a>
                 </div>
-                {/*<button>Download CV</button>*/}
                 <Button name={'Download CV'} callback={() => {
                     alert('Download')
                 }} className={s.button}/>

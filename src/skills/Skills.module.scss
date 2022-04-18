@@ -99,13 +99,16 @@
           }
         }
         .button {
-          background-color: $green;
+          background-color: transparent;
+          border: 2px solid $green;
           padding: 10px 15px;
           border-radius: 10px;
           color: $white;
+          transition: all 1s ease-in-out;
+          letter-spacing: 1px;
           &:hover {
-            background-color: transparent;
-            border: 2px solid $green;
+            background-color: $green;
+            transform: translateY(-7px);
           }
         }
       }

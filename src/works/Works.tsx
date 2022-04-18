@@ -3,8 +3,19 @@ import s from "./Works.module.scss";
 import {Project} from "./project/Project";
 import c from "../common/styles/Container.module.scss";
 import {BlockTitle} from "../common/blockTitle/BlockTitle";
+import {ProjectsData} from "../DATA";
+
 
 export const Works = () => {
+
+    const projectElements = ProjectsData.map(item => {
+        return <Project key={item.id}
+                        title={item.title}
+                        description={item.description}
+                        image={item.img}
+        />
+    })
+
     return (
         <div className={s.worksBlock}>
             <div className={c.container}>
@@ -12,26 +23,7 @@ export const Works = () => {
                     <BlockTitle title={'My projects'}/>
 
                     <div className={s.projectsBlock}>
-                        <Project
-                            title={'Название проекта'}
-                            description={'Описание проекта'}
-                        />
-                        <Project
-                            title={'Название проекта'}
-                            description={'Описание проекта'}
-                        />
-                        <Project
-                            title={'Название проекта'}
-                            description={'Описание проекта'}
-                        />
-                        <Project
-                            title={'Название проекта'}
-                            description={'Описание проекта'}
-                        />
-                        <Project
-                            title={'Название проекта'}
-                            description={'Описание проекта'}
-                        />
+                        {projectElements}
                     </div>
                 </div>
             </div>

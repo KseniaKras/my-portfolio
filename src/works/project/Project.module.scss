@@ -1,0 +1,47 @@
+@import "./src/common/styles/variables.scss";
+@import "./src/common/styles/Templates.module";
+
+
+.projectBlock {
+    //border: 1px solid midnightblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin-bottom: 30px;
+    @extend %tplBackgroundCard;
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        background-color: darkgray;
+        position: relative;
+        .link {
+            text-decoration: none;
+        }
+    }
+    .title {
+        margin: 15px 0;
+        font-size: 22px;
+    }
+    .description {
+        color: $white;
+        text-align: center;
+        border: 1px solid midnightblue;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+

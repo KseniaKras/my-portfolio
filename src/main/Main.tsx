@@ -29,7 +29,6 @@ export const Main = () => {
                             <a href={'#'} target={'_blank'} className={s.iconLink}><GitHubIcon/></a>
                             <a href={'#'} target={'_blank'} className={s.iconLink}><LinkedInIcon/></a>
                         </div>
-                        {/*</div>*/}
                         <p className={s.greetingText}>
                             I'm front-end developer. I have experience in cross-browser, adaptive,
                             responsive development, creating SPA with react, redux, typescript, using RestAPI.
@@ -54,7 +53,6 @@ export const Main = () => {
                     </div>
                 </div>
             </div>
-            {/*<Nav/>*/}
         </div>
     );
 };

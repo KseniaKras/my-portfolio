@@ -1,0 +1,27 @@
+//Шаблоны
+// ... @extend %tplBackground;
+
+%tplBackgroundContainer {
+  background: rgba(26, 27, 26, 0.74);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(26, 27, 26, 0.31);
+}
+
+%tplBackgroundCard {
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+//Миксины
+
+@mixin fontz($f){
+  font-size: $f;
+}
+
+//@include fontz(50px)
