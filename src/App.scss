@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "src/common/styles/variables";
 
 *{
   box-sizing: border-box;
@@ -11,28 +12,50 @@
 }
 
 .App {
-  background-color: #111;
+  //background-color: #111;
+  position: relative;
+  background-color: #343549;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  .appBlockElement {
+    background: linear-gradient(45deg, $blue, $purpleLight);
+    border-radius: 50%;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: -11%;
+    top: -21%;
+    $box-shadow: 0 0 7px RGB(255 255 255 / 95%);
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: $purpleLight;
+    bottom: 14px;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: $blue;
+    right: 44px;
+    top: 84px;
 
-}
-.appContent {
-  width: 100%;
-  height: 100%;
-  padding: 70px;
-  margin-right: 60px;
+  }
+  .appContent {
+    width: 100%;
+    height: 100%;
+    padding: 70px;
+    margin-right: 60px;
 
+  }
 }
-.appBlockElement {
-  background-color: #75c71a;;
-  position: fixed;
-  height: 155%;
-  width: 136%;
-  transform: rotate(-57deg);
-  left: -91%;
-  top: -48%;
-  $box-shadow: 0 0 7px RGB(255 255 255 / 95%);
-}
+
 

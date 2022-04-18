@@ -1,3 +1,5 @@
+@import "src/common/styles/variables";
+
 .mainBlock {
     height: 100%;
     width: 100%;
@@ -22,7 +24,8 @@
                 height: 40px;
                 overflow: hidden;
                 text-align: center;
-                color: #75c71a;
+                //color: #75c71a;
+                color: $blue;
 
                 >h3 {
                     font-size: 30px;
@@ -47,7 +50,7 @@
                     color: #6d6d6d;
 
                     &:hover {
-                        color: #75c71a;
+                        color: $blue;
                     }
                 }
 
@@ -55,7 +58,8 @@
 
             .greetingText {
                 width: 400px;
-                color: #888;
+                //color: #888;
+                color: #A4A5B1;;
                 text-transform: none;
                 font-size: 16px;
                 font-weight: 500;
@@ -71,7 +75,8 @@
                 display: inline-block;
                 font-size: 15px;
                 font-weight: 600;
-                border: 1px solid #72b626;
+                //border: 1px solid #72b626;
+                border: 1px solid $purpleLight;
                 background-color: transparent;
                 color: #fff;
                 border-radius: 20px;
@@ -83,9 +88,11 @@
                 position: relative;
 
                 &:hover {
-                    background-color: #75c71a;
+                    //background-color: #75c71a;
+                    background: linear-gradient(270deg, $purpleLight, $blue);
                     .iconArrow {
-                        background-color: #75c71a;
+                        background-color: $blue;
+                        //background: linear-gradient(270deg, $purpleLight, $blue);
                         transform: translateX(-140px);
                     }
                 }
@@ -94,7 +101,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: #75c71a;
+                    background-color: $purpleLight;
                     border-radius: 45%;
                     width: 40px;
                     height: 40px;

@@ -3,9 +3,10 @@ import s from './Input.module.css'
 
 type InputPropsType = {
     className?: string
+    placeholderText: string
 }
 
-export const Input = ({className}: InputPropsType) => {
+export const Input = ({className, placeholderText}: InputPropsType) => {
 
     let onChangeHandler = () => {}
     let onKeyPressHandler = () => {}
@@ -18,6 +19,7 @@ export const Input = ({className}: InputPropsType) => {
             onChange={onChangeHandler}
             onKeyPress={onKeyPressHandler}
             className={finalClassName}
+            placeholder={placeholderText}
         />
     );
 };

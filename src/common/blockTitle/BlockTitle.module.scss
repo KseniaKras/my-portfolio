@@ -1,3 +1,5 @@
+@import 'src/common/styles/variables.scss';
+
 .titleIntro {
     color: #888;
     text-transform: capitalize;
@@ -18,7 +20,7 @@
     content: '';
     display: block;
     position: relative;
-    background-color: #75c71a;
+    background-color: $blue;
     height: 3px;
     left: 0;
     right: 0;

@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import s from './Nav.module.css'
+import s from './Nav.module.scss'
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import WebIcon from '@material-ui/icons/Web';
@@ -49,6 +49,3 @@ export const NavItem: FC<NavTextPropsType> = ({text, path}) => {
         </div>
     )
 }
-
-
-// navData => navData.isActive ? `${s.active} ${s.navLink}` : s.navLink}

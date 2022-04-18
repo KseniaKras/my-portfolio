@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import s from "./BlockTitle.module.css";
+import s from "./BlockTitle.module.scss";
 
 type BlockTitlePropsType = {
     introText?: string

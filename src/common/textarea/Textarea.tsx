@@ -3,9 +3,10 @@ import s from './Textarea.module.css'
 
 type TextareaPropsType = {
     className?: string
+    placeholderText: string
 }
 
-export const Textarea = ({className}: TextareaPropsType) => {
+export const Textarea = ({className, placeholderText}: TextareaPropsType) => {
 
     let onChangeHandler = () => {}
     let onKeyPressHandler = () => {}
@@ -13,6 +14,6 @@ export const Textarea = ({className}: TextareaPropsType) => {
     let finalClassName = className ? `${className} ${s.textarea}` : s.textarea
 
     return (
-        <textarea className={finalClassName}/>
+        <textarea className={finalClassName} placeholder={placeholderText}/>
     );
 };

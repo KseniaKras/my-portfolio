@@ -4,6 +4,7 @@
 .skillBlock {
     display: flex;
     flex-direction: column;
+    //justify-content: space-between;
     align-items: center;
     text-align: center;
     width: 150px;
@@ -16,7 +17,9 @@
     @extend %tplBackgroundCard;
 
     &:hover {
-        background: linear-gradient(to bottom right, RGB(0 0 0 / 85%), RGB(0 0 0 / 15%));
+        background: linear-gradient(270deg, $purpleLight, $blue);
+        background-blend-mode: soft-light;
+        transform: translateY(-10px);
     }
     .imageBlock {
         width: 70px;
@@ -33,16 +36,8 @@
     }
     .title {
         margin: 15px 0;
-        color: $green;
-        font-size: 22px;
-    }
-    .description {
-        text-align: center;
-        border: 1px solid #18192a;
-        padding: 10px;
-        width: 100%;
-        font-size: 18px;
         color: $white;
+        font-size: 20px;
     }
 
 }
