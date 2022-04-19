@@ -16,13 +16,13 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={c.container}>
                 <div className={s.mainContent}>
-                    <PhotoBlock />
+                    <div className={s.mainPhoto}><PhotoBlock /></div>
                     <div className={s.greetingBlock}>
                         <BlockTitle introText={'Hello, I am'} title={'Ksenia Krasnikova'} />
                         <div className={s.animatedText}>
-                            <h3>front-end developer</h3>
-                            <h3>web-developer</h3>
-                            <h3>software Engineer</h3>
+                            <h3 className={s.animatedTextTitle}>front-end developer</h3>
+                            <h3 className={s.animatedTextTitle}>web-developer</h3>
+                            <h3 className={s.animatedTextTitle}>software Engineer</h3>
                         </div>
                         <div className={s.contacts}>
                             <a href={'#'} target={'_blank'} className={s.iconLink}><TelegramIcon/></a>

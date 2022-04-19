@@ -1,141 +1,202 @@
 @import "src/common/styles/variables";
 
 .mainBlock {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+
+  .mainContent {
     display: flex;
-    border-radius: 15px;
-    .mainContent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 25px;
-        height: 100%;
-        .greetingBlock {
-            width: 58%;
-            flex: 0 0 auto;
-            padding: 25px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    height: 100%;
 
-            .animatedText {
-                position: relative;
-                height: 40px;
-                overflow: hidden;
-                text-align: center;
-                //color: #75c71a;
-                color: $blue;
-
-                >h3 {
-                    font-size: 30px;
-                    text-transform: uppercase;
-                    line-height: 50px;
-                    letter-spacing: 1px;
-                    font-weight: 600;
-                    animation: fadeInDown 8s infinite alternate 1s;
-                }
-
-            }
-
-            .contacts {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 10px 0;
-                height: 50px;
-                width: 180px;
-
-                .iconLink {
-                    color: #6d6d6d;
-
-                    &:hover {
-                        color: $blue;
-                    }
-                }
-
-            }
-
-            .greetingText {
-                width: 400px;
-                //color: #888;
-                color: #A4A5B1;;
-                text-transform: none;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.6;
-                margin: 0 0 15px;
-            }
-
-            >div .mainButton {
-                margin-top: 20px;
-                margin-right: 20px;
-                width: 180px;
-                height: 40px;
-                display: inline-block;
-                font-size: 15px;
-                font-weight: 600;
-                //border: 1px solid #72b626;
-                border: 1px solid $purpleLight;
-                background-color: transparent;
-                color: #fff;
-                border-radius: 20px;
-                text-transform: capitalize;
-                text-align: center;
-                padding: 10px 0;
-                text-decoration: none;
-                transition: background-color 2.5s ease-in-out, transform 2s ease-in-out;
-                position: relative;
-
-                &:hover {
-                    //background-color: #75c71a;
-                    background: linear-gradient(270deg, $purpleLight, $blue);
-                    .iconArrow {
-                        background-color: $blue;
-                        //background: linear-gradient(270deg, $purpleLight, $blue);
-                        transform: translateX(-140px);
-                    }
-                }
-
-                .iconArrow {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: $purpleLight;
-                    border-radius: 45%;
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: -1px;
-                    right: 0;
-                    transition: transform 1.5s ease-in-out;
-                }
-            }
-        }
+    .mainPhoto {
+      width: 40%;
+      height: auto;
+      border-radius: 30px;
+      margin-right: 40px;
     }
+
+    .greetingBlock {
+      padding: 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .animatedText {
+        position: relative;
+        height: 40px;
+        overflow: hidden;
+        text-align: center;
+        color: $blue;
+
+        .animatedTextTitle {
+          font-size: 30px;
+          text-transform: uppercase;
+          line-height: 50px;
+          letter-spacing: 1px;
+          font-weight: 600;
+          animation: fadeInDown 8s infinite alternate 1s;
+        }
+      }
+
+      .contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        height: 50px;
+        width: 180px;
+
+        .iconLink {
+          color: #6d6d6d;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+
+      .greetingText {
+        width: 400px;
+        //color: #888;
+        color: #A4A5B1;;
+        text-transform: none;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        margin: 0 0 15px;
+      }
+
+      > div .mainButton {
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 180px;
+        height: 40px;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        //border: 1px solid #72b626;
+        border: 1px solid $purpleLight;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 20px;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        transition: background-color 2.5s ease-in-out, transform 2s ease-in-out;
+        position: relative;
+
+        &:hover {
+          background: linear-gradient(270deg, $purpleLight, $blue);
+
+          .iconArrow {
+            background-color: $blue;
+            transform: translateX(-140px);
+          }
+        }
+
+        .iconArrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $purpleLight;
+          border-radius: 45%;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: -1px;
+          right: 0;
+          transition: transform 1.5s ease-in-out;
+        }
+      }
+    }
+  }
 }
 
 
 //animations
 @keyframes fadeInDown {
-    from {
-        /*opacity: 1;*/
-        -webkit-transform: translate3d(0,-200%,0);
-        transform: translate3d(0,-200%,0);
-    }
-    to {
-        /*opacity: 1;*/
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
+  from {
+    /*opacity: 1;*/
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+  }
+  to {
+    /*opacity: 1;*/
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 
 //media requests
-@media (min-width: 340px) and (max-width: 740px) {
-    .greetingBlock {
-        margin-bottom: 20px;
+@media (max-width: 970px) {
+  .mainBlock {
+    .mainContent {
+      flex-direction: column;
+
+      .mainPhoto {
+        width: 90%;
+
+      }
+
+      .greetingBlock {
+        width: 40%;
+
+        .animatedText {
+          .animatedTextTitle {
+            font-size: 22px;
+          }
+        }
+
+        .greetingText {
+          width: 200px;
+        }
+      }
     }
+  }
 }
 
+@media (min-width: 340px) and (max-width: 700px) {
+  .mainBlock {
+    .mainContent {
+      //flex-direction: column;
+      //justify-content: space-around;
+      .mainPhoto {
+        width: 90%;
+      }
 
+      .greetingBlock {
+        width: 104%;
+        text-align: center;
+
+        .animatedText {
+          width: 100%;
+
+          .animatedTextTitle {
+            font-size: 18px;
+          }
+        }
+        .contacts{
+          .iconLink {
+            color: $blue;
+          }
+        }
+        .greetingText {
+          width: 200px;
+        }
+        > div .mainButton {
+          background: linear-gradient(270deg, $purpleLight, $blue);
+          .iconArrow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

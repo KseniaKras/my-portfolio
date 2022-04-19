@@ -1,0 +1,40 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/Templates.module";
+
+.myContactsBlock {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    bottom: 38px;
+    left: -30px;
+    background-color: rgba(44, 45, 65, 0.64);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      background-color: $blue;
+    }
+
+  }
+
+  .contactItem {
+    margin: 0 0 40px 30px;
+
+    > h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    > span {
+      font-size: 18px;
+    }
+  }
+}

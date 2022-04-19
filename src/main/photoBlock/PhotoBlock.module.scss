@@ -1,8 +1,4 @@
 .photoBlock {
-  width: 40%;
-  z-index: 11;
-  border-radius: 30px;
-  margin-right: 40px;
   position: relative;
 
   .tsparticles {
@@ -12,7 +8,6 @@
     height: 100%;
     background-color: transparent;
   }
-
   .photo {
     width: 100%;
     height: auto;
@@ -24,4 +19,8 @@
 }
 
 
+@media (min-width: 340px) and (max-width: 620px) {
+  .photoBlock {
 
+  }
+}
