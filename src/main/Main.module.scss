@@ -3,11 +3,6 @@
 
 .mainContent {
   @extend %tplContent;
-  //display: flex;
-  //justify-content: space-around;
-  //align-items: center;
-  //padding: 25px;
-  //height: 100%;
 
   .mainPhoto {
     max-width: 500px;
@@ -15,12 +10,14 @@
     border-radius: 30px;
     margin-right: 40px;
   }
+
   .greetingBlock {
     padding: 25px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .animatedText {
       position: relative;
       height: 40px;
@@ -37,20 +34,7 @@
         animation: fadeInDown 8s infinite alternate 1s;
       }
     }
-    .contacts {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 10px 0;
-      height: 50px;
-      width: 180px;
-      .iconLink {
-        color: #6d6d6d;
-        &:hover {
-          color: $blue;
-        }
-      }
-    }
+
     .greetingText {
       width: 90%;
       color: #A4A5B1;;
@@ -59,11 +43,13 @@
       line-height: 1.6;
       margin: 0 0 15px;
     }
+
     .buttonsBlock {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+
       .mainButton {
         margin-top: 20px;
         margin-right: 20px;
@@ -82,13 +68,16 @@
         text-decoration: none;
         transition: background-color 2.5s ease-in-out, transform 2s ease-in-out;
         position: relative;
+
         &:hover {
           background: linear-gradient(270deg, $purpleLight, $blue);
+
           .iconArrow {
             background-color: $blue;
             transform: translateX(-140px);
           }
         }
+
         .iconArrow {
           display: flex;
           justify-content: center;
@@ -106,8 +95,6 @@
     }
   }
 }
-
-//}
 
 
 //animations
@@ -131,8 +118,10 @@
     .mainPhoto {
       width: 60%;
     }
+
     .greetingBlock {
       width: 40%;
+
       .animatedText {
         .animatedTextTitle {
           font-size: 20px;
@@ -146,9 +135,11 @@
 @media (min-width: 701px) and (max-width: 970px) {
   .mainContent {
     flex-direction: column;
+
     .mainPhoto {
       width: 90%;
     }
+
     .greetingBlock {
       width: 90%;
 
@@ -157,11 +148,14 @@
           font-size: 26px;
         }
       }
+
       .greetingText {
         font-size: 22px;
       }
-      .buttonsBlock .mainButton{
+
+      .buttonsBlock .mainButton {
         background: linear-gradient(270deg, $purpleLight, $blue);
+
         .iconArrow {
           display: none;
         }
@@ -174,29 +168,31 @@
   .mainContent {
     padding: 10px;
     flex-direction: column;
+
     .mainPhoto {
       margin: 0 auto 0;
       width: 100%;
     }
+
     .greetingBlock {
       width: 100%;
       text-align: center;
+
       .animatedText {
         width: 100%;
+
         .animatedTextTitle {
           font-size: 18px;
         }
       }
-      .contacts {
-        .iconLink {
-          color: $blue;
-        }
-      }
+
       .greetingText {
         width: 90%;
       }
+
       > div .mainButton {
         background: linear-gradient(270deg, $purpleLight, $blue);
+
         .iconArrow {
           display: none;
         }

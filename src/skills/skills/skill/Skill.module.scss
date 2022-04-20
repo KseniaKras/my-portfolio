@@ -1,5 +1,5 @@
-@import "src/common/styles/variables";
-@import "./src/common/styles/Templates.module";
+@import "../../../common/styles/variables";
+@import "../../../common/styles/Templates.module";
 
 .skillBlock {
   @extend %tplBackgroundCard;

@@ -8,6 +8,7 @@
   border: 0;
   line-height: 1;
   font-size: 18px;
+  font-weight: 400;
   font-family: Lato,sans-serif;
 }
 
@@ -27,7 +28,6 @@
     left: -11%;
     top: -21%;
     box-shadow: 0 15px 60px rgba(0, 0, 0, 50%);
-    //box-shadow: 0 10 77px RGB(255 255 255 / 95%);
   }
   &:before{
     content: '';
@@ -38,6 +38,7 @@
     background-color: $purpleLight;
     bottom: 14px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 50%);
+    overflow: hidden;
   }
   &:after{
     content: '';
@@ -49,10 +50,11 @@
     right: 44px;
     top: 84px;
     box-shadow: 0 14px 65px rgba(0, 0, 0, 50%);
+    overflow: hidden;
   }
   .appContent {
     width: 80%;
-    min-height: 100%;
+    height: 100%;
     margin: 0 auto;
     z-index: 1000;
 

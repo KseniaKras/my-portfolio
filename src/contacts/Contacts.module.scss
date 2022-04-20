@@ -1,109 +1,43 @@
 @import "src/common/styles/variables";
 @import "src/common/styles/Templates.module";
 
-//.contactsBlock {
-//    height: 100%;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    >div
-    .formsContent {
-        @extend %tplContent;
-        flex-direction: column;
 
-        .formsBlock {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+.formsContent {
+  @extend %tplContent;
+  flex-direction: column;
 
-            .contactInfoBlock {
-                min-width: 300px;
-                @extend %tplBackgroundCard;
-                background: linear-gradient(270deg, $blue, $purpleLight);
-                height: 340px;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                padding: 10px 40px;
-            }
-            .forms {
-                @extend %tplBackgroundCard;
-                width: 60%;
-                margin: 0 0 0 60px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px 60px;
+  .formsBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-                >input {
-                    background-color: #343549;
-                    max-width: 45%;
-                    vertical-align: middle;
-                    border: 1px solid $purpleLight;
-                    border-radius: 10px;
-                    padding: 10px 20px;
-                    color: $white;
-                    &:focus {
-                        outline: none;
-                        border: 1px solid $blue;
-                    }
-                }
-                >textarea {
-                    width: 100%;
-                    //max-width: 470px;
-                    height: 100px;
-                    background-color: #343549;
-                    border: 1px solid $purpleLight;
-                    border-radius: 20px;
-                    color: white;
-                    padding: 10px 20px;
-                    margin: 10px 0 15px;
-                    &:focus {
-                        outline: none;
-                        border: 1px solid $blue;
-                    }
-                }
-                .button {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-        }
+    .contactInfoBlock {
+      min-width: 300px;
+      @extend %tplBackgroundCard;
+      background: linear-gradient(270deg, $blue, $purpleLight);
+      height: 340px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 10px 40px;
     }
-
-//}
-
+  }
+}
 
 
 @media (min-width: 340px) and (max-width: 985px) {
-    .formsContent {
-        .formsBlock {
-            flex-direction: column-reverse;
+  .formsContent {
+    .formsBlock {
+      flex-direction: column-reverse;
 
-            .contactInfoBlock {
-                width: 95%;
-                margin-top: 30px;
-
-            }
-
-            .forms {
-                width: 95%;
-                margin: 0;
-                padding: 10px;
-                >input {
-                    min-width: 100%;
-                }
-                >textarea {
-                    min-width: 100%;
-                }
-
-            }
-        }
-
+      .contactInfoBlock {
+        width: 95%;
+        margin-top: 30px;
+      }
     }
+  }
 }

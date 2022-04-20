@@ -1,7 +1,6 @@
 //Шаблоны
 // ... @extend %tplBackground;
 
-
 %tplBackgroundContainer {
   background: rgba( 52, 53, 73, 0.3);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 50%);
@@ -30,10 +29,11 @@
 }
 
 
+
+
+
+
 //Миксины
-
-@mixin fontz($f){
-  font-size: $f;
+@mixin fontz(){
 }
-
 //@include fontz(50px)

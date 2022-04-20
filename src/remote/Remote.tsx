@@ -3,7 +3,7 @@ import s from './Remote.module.scss'
 import {NavLink} from "react-router-dom";
 import {Button} from "../common/button/Button";
 
-export const RemoteWork = () => {
+export const RemoteWorkBlock = () => {
     return (
         <div className={s.remoteBlock}>
                 <div className={s.remoteContent}>

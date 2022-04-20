@@ -1,44 +1,33 @@
 import React from 'react';
 import s from './Contacts.module.scss';
-import {Input} from "../common/input/Input";
-import {Textarea} from "../common/textarea/Textarea";
 import c from "../common/styles/Container.module.scss";
 import {BlockTitle} from "../common/blockTitle/BlockTitle";
-import {Button} from "../common/button/Button";
-import {MyContacts} from "./MyContacts";
+import {ContactItem} from "./contactItem/ContactItem";
+import {ContactsData} from "../DATA/ContactsData";
+import {AddMessageForm} from "./addMessageForm/AddMessageForm";
 
 
 export const Contacts = () => {
+
+    let contactElements = ContactsData.contactItems.map(c => {
+        return <ContactItem key={c.id} title={c.title} text={c.text}>
+            {<c.icon/>}
+        </ContactItem>
+    })
+
     return (
-        // <div className={s.contactsBlock}>
-            <div className={c.container}>
-                <BlockTitle title={'My Contact'} />
-                <div className={s.formsContent}>
-
-                    <div className={s.formsBlock}>
-                        <div className={s.contactInfoBlock}>
-                           <MyContacts title={'Address'} text={'Minsk, Belarus'} />
-                           <MyContacts title={'Email'} text={'ksenia.kras29@gmail.com'}/>
-                           <MyContacts title={'Phone'} text={'+375291626439'} />
-                        </div>
-                        <form className={s.forms}>
-                            <Input placeholderText={'Name'}/>
-                            <Input placeholderText={'Email'}/>
-                            <Input placeholderText={'Phone'}/>
-                            <Input placeholderText={'Subject'}/>
-                            <Textarea placeholderText={'Enter Your Message'}/>
-                            <div className={s.button}>
-                                <Button name={'Send'} callback={()=>{}} />
-                            </div>
-
-                        </form>
-
+        <div className={c.container}>
+            <BlockTitle title={ContactsData.blockTitle.title}/>
+            <div className={s.formsContent}>
+                <div className={s.formsBlock}>
+                    <div className={s.contactInfoBlock}>
+                        {contactElements}
                     </div>
-
-                    {/*<a href={'#'} className={s.link}>Отправить</a>*/}
+                    <AddMessageForm/>
                 </div>
             </div>
-        // </div>
+        </div>
     );
 };
+
 
