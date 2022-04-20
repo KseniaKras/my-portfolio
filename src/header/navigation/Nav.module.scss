@@ -8,6 +8,7 @@
     @extend %tplBackgroundContainer;
     position: fixed;
     right: 0;
+    bottom: calc(10%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +45,10 @@
             text-align: center;
         }
         .navIcon {
-            //position: relative;
             background-color: transparent;
             color: $purpleLight;
             width: 60px;
             height: 60px;
-            //right: -1px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -86,7 +85,7 @@
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 740px) {
     .navBlock {
         flex-direction: row;
         align-items: center;

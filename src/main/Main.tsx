@@ -13,7 +13,6 @@ import {BlockTitle} from "../common/blockTitle/BlockTitle";
 export const Main = () => {
 
     return (
-        <div className={s.mainBlock}>
             <div className={c.container}>
                 <div className={s.mainContent}>
                     <div className={s.mainPhoto}><PhotoBlock /></div>
@@ -34,25 +33,22 @@ export const Main = () => {
                             responsive development, creating SPA with react, redux, typescript, using RestAPI.
                             I will be glad to join your team and work together
                         </p>
-                        <div>
+                        <div className={s.buttonsBlock}>
                             <NavLink to={'/about'} className={s.mainButton}>
                                 <span className={s.mainBtnText}>About me</span>
                                 <div className={s.iconArrow}>
                                     <ArrowForwardIcon/>
                                 </div>
-                                <div className={s.forAnimation}/>
                             </NavLink>
                             <NavLink to={'/contact'} className={s.mainButton}>
                                 <span className={s.mainBtnText}>Hire me</span>
                                 <div className={s.iconArrow}>
                                     <ArrowForwardIcon/>
                                 </div>
-                                <div className={s.forAnimation}/>
                             </NavLink>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     );
 };

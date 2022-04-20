@@ -14,16 +14,14 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 export const Skills: FC = () => {
     return (
-        <div className={s.skillsBlock}>
             <div className={c.container}>
+                <BlockTitle introText={'Intro'} title={'About me'}/>
                 <div className={s.skillsContent}>
-                    <BlockTitle introText={'Intro'} title={'About me'}/>
                     <PersonalInfo data={PersonalDATA}/>
                     <SkillsBlock skillsData={skills}/>
                     <RemoteWork/>
                 </div>
             </div>
-        </div>
     );
 };
 
@@ -31,7 +29,6 @@ type PersonalInfoPropsType = {
     data: PersonalDataType
 }
 export const PersonalInfo: FC<PersonalInfoPropsType> = ({data}) => {
-
     let infoItems = data.map((item, index) => {
         return <ul key={index} className={s.items}>
             <li>
@@ -40,7 +37,6 @@ export const PersonalInfo: FC<PersonalInfoPropsType> = ({data}) => {
             </li>
         </ul>
     })
-
     return (
         <div className={s.personalInfoBlock}>
             <div className={s.photoBlock}>

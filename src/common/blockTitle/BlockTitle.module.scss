@@ -3,9 +3,11 @@
 .titleIntro {
     color: $grey;
     text-transform: capitalize;
-    margin-bottom: 8px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    font-size: 18px;
     line-height: 1.6;
+    text-align: center;
 }
 .mainTitle {
     color: $white;
@@ -14,6 +16,7 @@
     font-weight: 700;
     word-spacing: 5px;
     position: relative;
+    text-align: center;
 }
 .animatedBar {
     content: '';

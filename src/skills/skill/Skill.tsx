@@ -5,7 +5,7 @@ import s from './Skill.module.scss'
 
 type SkillComponentPropsType = {
     title: string
-    image?: string
+    image: string
 }
 
 export const Skill = ({title, image}:SkillComponentPropsType) => {
