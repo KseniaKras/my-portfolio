@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Remote.module.scss'
-import c from "../common/styles/Container.module.scss";
 import {NavLink} from "react-router-dom";
 import {Button} from "../common/button/Button";
 

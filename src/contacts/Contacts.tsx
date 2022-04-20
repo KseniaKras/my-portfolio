@@ -10,10 +10,11 @@ import {MyContacts} from "./MyContacts";
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        // <div className={s.contactsBlock}>
             <div className={c.container}>
+                <BlockTitle title={'My Contact'} />
                 <div className={s.formsContent}>
-                    <BlockTitle title={'My Contact'} />
+
                     <div className={s.formsBlock}>
                         <div className={s.contactInfoBlock}>
                            <MyContacts title={'Address'} text={'Minsk, Belarus'} />
@@ -37,7 +38,7 @@ export const Contacts = () => {
                     {/*<a href={'#'} className={s.link}>Отправить</a>*/}
                 </div>
             </div>
-        </div>
+        // </div>
     );
 };
 
