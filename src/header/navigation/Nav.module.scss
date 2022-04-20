@@ -43,6 +43,9 @@
             display: flex;
             justify-content: center;
             text-align: center;
+            .icon {
+                color: $blue;
+            }
         }
         .navIcon {
             background-color: transparent;
@@ -94,11 +97,14 @@
         height: 50px;
         .navLinkBlock {
             .activeLink .navIcon {
-                top: -52px;
-                left: -31px;
+                position: static;
+                .icon {
+                    color: $blue;
+                }
             }
             .navText {
                 display: none;
+
             }
         }
     }

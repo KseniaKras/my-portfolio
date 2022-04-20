@@ -7,10 +7,10 @@
     margin: 0 auto;
     //z-index: 1000;
     border-radius: 15px;
-    //overflow: hidden;
+    overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    animation: animate 1.5s ease-in-out;
+    animation: animate 1.3s ease-in-out;
 }
 ::-webkit-scrollbar {
     width: 4px; /* ширина для вертикального скролла */

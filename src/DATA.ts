@@ -66,4 +66,5 @@ export const ProjectsData = [
     {id: 2, title: 'Social Network App', description: 'Stack..', img: ''},
     {id: 3, title: 'Friday\'s Project App', description: 'Stack..', img: ''},
     {id: 4, title: 'QR-code Scanner', description: 'Stack..', img: ''},
+    {id: 5, title: 'Counter', description: 'Stack..', img: ''},
 ]

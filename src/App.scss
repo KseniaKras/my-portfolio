@@ -19,14 +19,15 @@
   display: flex;
   align-items: center;
   .appBlockElement {
-    background: linear-gradient(45deg, $blue, $purpleLight);
+    background: linear-gradient(75deg, $blue, $purpleLight);
     border-radius: 50%;
     position: absolute;
     height: 500px;
     width: 500px;
     left: -11%;
     top: -21%;
-    $box-shadow: 0 0 7px RGB(255 255 255 / 95%);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 50%);
+    //box-shadow: 0 10 77px RGB(255 255 255 / 95%);
   }
   &:before{
     content: '';
@@ -36,6 +37,7 @@
     border-radius: 50%;
     background-color: $purpleLight;
     bottom: 14px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 50%);
   }
   &:after{
     content: '';
@@ -46,12 +48,14 @@
     background-color: $blue;
     right: 44px;
     top: 84px;
+    box-shadow: 0 14px 65px rgba(0, 0, 0, 50%);
   }
   .appContent {
     width: 80%;
     min-height: 100%;
     margin: 0 auto;
     z-index: 1000;
+
   }
 }
 

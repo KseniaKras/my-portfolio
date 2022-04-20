@@ -3,43 +3,85 @@
 
 
 .projectBlock {
-    //border: 1px solid midnightblue;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    margin-bottom: 30px;
     @extend %tplBackgroundCard;
+    //position: relative;
+    //display: flex;
+    //flex-wrap: wrap;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    //transition: all 1s ease-in;
+    position: relative;
 
-    .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 150px;
-        background-color: darkgray;
-        position: relative;
-        .link {
-            text-decoration: none;
+    &:hover {
+
+        .frontImage{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+        .backBlock{
+            transform: perspective(600px) rotateY(0deg);
         }
     }
-    .title {
-        margin: 15px 0;
-        font-size: 22px;
-    }
-    .description {
-        color: $white;
-        text-align: center;
-        border: 1px solid midnightblue;
+
+    .frontImage {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding: 10px;
-        font-size: 18px;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transition: transform .6s linear;
+        transform: perspective(600px) rotateY(0deg);
+
+        //display: flex;
+        //justify-content: center;
+        //align-items: center;
+        //width: 100%;
+        //height: 150px;
+        //background-color: darkgray;
+        //position: relative;
+        //position: absolute;
+       >img {
+           width: 100%;
+           height: 100%;
+           background-size: cover;
+           background-position: center;
+       }
+
     }
+    .backBlock {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        transition: transform .6s linear;
+        transform: perspective(600px) rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
+        .title {
+            color: white;
+            margin: 15px 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .description {
+            color: $white;
+            text-align: center;
+            border: 1px solid midnightblue;
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
 }
-
 
 
 

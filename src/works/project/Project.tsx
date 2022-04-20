@@ -12,14 +12,14 @@ type ProjectPropsType = {
 export const Project = ({title, description, image}:ProjectPropsType) => {
     return (
         <div className={s.projectBlock}>
-            <div className={s.image}>
-                {/*<img src={image} alt={''}/>*/}
-                <a href={'#'} className={s.link}>
-                    <Button name={'Look'} callback={()=>{}}/>
-                </a>
+            <div className={s.frontImage}>
+                <img src={'https://media.proglib.io/wp-uploads/2019/07/clean-code.jpg'} alt={'Photo of project'}/>
             </div>
-            <span className={s.title}>{title}</span>
-            <span className={s.description}>{description}</span>
+            <div className={s.backBlock}>
+                <h3 className={s.title}>{title}</h3>
+                <span className={s.description}>{description}</span>
+                    <Button name={'Look'} callback={()=>{}}/>
+            </div>
         </div>
     );
 };
