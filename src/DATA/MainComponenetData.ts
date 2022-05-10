@@ -43,9 +43,9 @@ export const MainData: MainDataType = {
         {id: 3, title: 'software Engineer'},
     ],
     icons: [
-        {id: 1, href: '', icon: TelegramIcon},
-        {id: 2, href: '', icon: GitHubIcon},
-        {id: 3, href: '', icon: LinkedInIcon},
+        {id: 1, href: 'https://t.me/ksenia_krasnikova', icon: TelegramIcon},
+        {id: 2, href: 'https://github.com/KseniaKras', icon: GitHubIcon},
+        {id: 3, href: 'https://www.linkedin.com/in/kseniya-krasnikova-45a566231/', icon: LinkedInIcon},
     ],
     greetingBlockText:
         ' I\'m front-end developer. I have experience in cross-browser, adaptive,\n' +

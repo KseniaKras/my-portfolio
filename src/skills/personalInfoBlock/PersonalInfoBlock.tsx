@@ -1,7 +1,6 @@
 import React, {FC} from "react";
 import s from "./InfoBlock.module.scss";
 import photo from "../../common/images/photo.jpg";
-import {Button} from "../../common/button/Button";
 import {IconsBlock} from "../../main/icons/IconsBlock";
 import {MainData} from "../../DATA/MainComponenetData";
 import {PersonalDataType} from "../../DATA/BlockAboutData";
@@ -20,6 +19,7 @@ export const PersonalInfoBlock: FC<PersonalInfoPropsType> = ({data}) => {
             </li>
         </ul>
     })
+
     return (
         <div className={s.personalInfoBlock}>
             <div className={s.photoBlock}>
@@ -40,11 +40,20 @@ export const PersonalInfoBlock: FC<PersonalInfoPropsType> = ({data}) => {
                         className={s.iconLink}
                     />
                 </div>
-                <Button
-                    name={'Download CV'}
-                    callback={() => {alert('Download')}}
-                    className={s.button}
-                />
+                {/*@ts-ignore*/}
+                {/*<Button*/}
+                {/*    name={'Download CV'}*/}
+                {/*    // callback={() => {alert('Download')}}*/}
+                {/*    className={s.button}*/}
+                {/*>*/}
+                <a href={"https://drive.google.com/file/d/1oQGKVesaqhMCXcii7Beadn14Hs-oFUuw/view?usp=sharing"}
+                   target={"_blank"}
+                   rel={"noreferrer"}
+                   className={s.linkToCV}
+                >
+                    Download CV
+                </a>
+                {/*</Button>*/}
             </div>
         </div>
     )
