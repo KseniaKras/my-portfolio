@@ -26,6 +26,18 @@
       padding: 10px 40px;
     }
   }
+  .messageSent {
+    @extend %tplBackgroundCard;
+    width: 60%;
+    margin: 0 0 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    color: white;
+
+
+  }
 }
 
 
@@ -38,6 +50,10 @@
         width: 95%;
         margin-top: 30px;
       }
+    }
+    .messageSent {
+      width: 95%;
+      margin: 0;
     }
   }
 }

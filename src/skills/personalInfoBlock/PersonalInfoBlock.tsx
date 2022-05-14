@@ -40,20 +40,13 @@ export const PersonalInfoBlock: FC<PersonalInfoPropsType> = ({data}) => {
                         className={s.iconLink}
                     />
                 </div>
-                {/*@ts-ignore*/}
-                {/*<Button*/}
-                {/*    name={'Download CV'}*/}
-                {/*    // callback={() => {alert('Download')}}*/}
-                {/*    className={s.button}*/}
-                {/*>*/}
-                <a href={"https://drive.google.com/file/d/1oQGKVesaqhMCXcii7Beadn14Hs-oFUuw/view?usp=sharing"}
+                <a href={"https://drive.google.com/file/d/13R2bLAlBk5jjV_jDXSI519anacpwHTsf/view?usp=sharing"}
                    target={"_blank"}
                    rel={"noreferrer"}
                    className={s.linkToCV}
                 >
                     Download CV
                 </a>
-                {/*</Button>*/}
             </div>
         </div>
     )
