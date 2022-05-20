@@ -22,6 +22,13 @@ export const Works = () => {
                 <div className={s.worksContent}>
                     <BlockTitle title={ProjectsData.blockTitle.title}/>
 
+                    <div style={{color: 'white', fontSize: '20px'}}>Page in development process. To see my projects
+                        follow the link to
+                        <a target={'_blank'} rel={'noreferrer'} style={{color: 'white'}}
+                           href="https://github.com/KseniaKras"> GiHub </a>
+                        or you can open and download my CV in block About
+                    </div>
+
                     <div className={s.projectsBlock}>
                         {projectElements}
                     </div>

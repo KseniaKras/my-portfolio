@@ -16,5 +16,5 @@ export type DataType = {
     phone: string
     email: string
     subject: string
-    textMessage: string
+    textMessage?: string
 }

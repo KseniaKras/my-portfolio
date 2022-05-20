@@ -4,6 +4,12 @@ import {DataType, formAPI} from "../../api/API";
 import {useFormik} from "formik";
 import {Button} from "../../common/button/Button";
 
+//
+// type FormikErrorType = {
+//     name: string
+//     email: string
+//     textMessage: string
+// }
 
 type AddMessageFormPropsType = {
     changeFormView: (value: boolean) => void
@@ -24,8 +30,22 @@ export const AddMessageForm :FC<AddMessageFormPropsType> = ({changeFormView}) =>
             subject: '',
             textMessage: '',
         },
+        // validate: (values) => {
+        //     const errors: FormikErrorType = {name: '', email: '', textMessage: ''};
+        //     if (!values.name) {
+        //         errors.name = 'Name Is Required';
+        //     }
+        //     if (!values.email) {
+        //         errors.email = 'Email Is Required';
+        //     }
+        //     if (!values.textMessage) {
+        //         errors.textMessage = 'Message Is Required';
+        //     }
+        //     return errors;
+        // },
         onSubmit: values => {
             send(values)
+            formik.resetForm()
         },
     });
 
@@ -38,8 +58,11 @@ export const AddMessageForm :FC<AddMessageFormPropsType> = ({changeFormView}) =>
                 onChange={formik.handleChange}
                 value={formik.values.name}
                 className={s.input}
-                placeholder={'Name'}
+                placeholder={'Name*'}
             />
+            {/*{formik.touched.name && formik.errors.name && <div style={{ color: "red" }}>*/}
+            {/*    {formik.errors.name}*/}
+            {/*</div>}*/}
             <input
                 id="phone"
                 name="phone"
@@ -56,8 +79,11 @@ export const AddMessageForm :FC<AddMessageFormPropsType> = ({changeFormView}) =>
                 onChange={formik.handleChange}
                 value={formik.values.email}
                 className={s.input}
-                placeholder={'Email'}
+                placeholder={'Email*'}
             />
+            {/*{formik.touched.email && formik.errors.email && <div style={{ color: "red" }}>*/}
+            {/*    {formik.errors.email}*/}
+            {/*</div>}*/}
             <input
                 id="subject"
                 name="subject"
@@ -73,8 +99,11 @@ export const AddMessageForm :FC<AddMessageFormPropsType> = ({changeFormView}) =>
                 onChange={formik.handleChange}
                 value={formik.values.textMessage}
                 className={s.inputMessage}
-                placeholder={'Your Message'}
+                placeholder={'Your Message*'}
             />
+            {/*{formik.touched.textMessage && formik.errors.textMessage && <div style={{ color: "red" }}>*/}
+            {/*    {formik.errors.textMessage}*/}
+            {/*</div>}*/}
             <div className={s.submitBtn}>
                 <Button type="submit" name={'Send'} callback={()=>{}}/>
             </div>

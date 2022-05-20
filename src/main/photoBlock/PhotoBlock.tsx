@@ -14,13 +14,12 @@ const PhotoBlock = () => {
                 console.log("callback - tsparticles config loaded");
             })
             .catch(error => {
-                console.error(error);
+                console.warn(error)
             });
-    })
+    }, [])
 
     return (
         <div className={s.photoBlock}>
-            {/*@ts-ignore*/}
             <Particles
                 className={s.tsparticles}
                 params={{
